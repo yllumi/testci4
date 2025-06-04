@@ -1,0 +1,33 @@
+name: Text
+description: Text input
+column: varchar
+constraint: 255
+fields:
+  name:
+    field: name
+    label: Field Name
+    type: text
+    description: Alphabet and numeric only
+    rules: required|strtolower|alpha_numeric
+  label:
+    field: label
+    label: Label
+    type: text
+    rules: required
+  description:
+    field: description
+    label: Description
+    type: text
+  rules:
+    field: rules
+    label: Rules
+    description: CodeIgniter 3 validation rules
+    type: text
+  default:
+    field: default
+    label: Default Value
+    type: text
+  placeholder:
+    field: placeholder
+    label: Placeholder
+    type: text
