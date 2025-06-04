@@ -15,4 +15,3 @@ commands:
   - "php spark db:seed RolesSeeder"
   - "php spark db:seed UserSeeder"
   - "php spark cache:clear"
-  - "chmod -R 775 writable"
