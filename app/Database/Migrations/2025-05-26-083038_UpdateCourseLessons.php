@@ -25,7 +25,7 @@ class UpdateCourseLessons extends Migration
         $this->forge->addColumn('course_lessons', $fields);
 
         // Add comment to table (PostgreSQL specific)
-        $this->db->query("COMMENT ON TABLE course_lessons IS ''");
+        // $this->db->query("COMMENT ON TABLE course_lessons IS ''");
     }
 
     public function down()
@@ -61,6 +61,6 @@ class UpdateCourseLessons extends Migration
         ];
         $this->forge->addColumn('course_lessons', $fields);
 
-        $this->db->query("COMMENT ON TABLE course_lessons IS NULL");
+        // $this->db->query("COMMENT ON TABLE course_lessons IS NULL");
     }
 }
